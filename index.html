@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Outubro</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url('imagempagina.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: sans-serif;
+            color: white;
+            margin-top: -100px; /* Move o conteúdo 100 pixels para cima */
+            background: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+            padding: 20px; /* Adiciona algum espaçamento interno */
+            border-radius: 10px; /* Adiciona bordas arredondadas */
+        }
+
+        #botoes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2>Projeto Outubro</h2>
+        <div id="botoes">
+            <button class="btn" onclick="sim()">Continuar</button>
+           
+        </div>
+    </div>
+
+    <script>
+        function sim() {
+            location.href = "projeto outubro pagina 2.html"; // Mude "outra_pagina.html" para o arquivo HTML desejado
+        }
+
+ 
+    </script>
+</body>
+
+</html>

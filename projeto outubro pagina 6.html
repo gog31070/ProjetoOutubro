@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Outubro</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url('imagempagina6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #conteudo {
+            position: absolute; /* Mudança importante: posição absoluta */
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+            font-family: sans-serif;
+            color: white;
+            background: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+            padding: 20px; /* Adiciona algum espaçamento interno */
+            border-radius: 10px; /* Adiciona bordas arredondadas */
+        }
+
+        #botoes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2>Ou aproveitando os momentos juntos na faculdade...</h2>
+        <div id="botoes">
+            <button class="btn" onclick="sim()">Continuar</button>
+        </div>
+    </div>
+
+    <script>
+        function sim() {
+            location.href = "projeto outubro pagina 7.html"; // Mude "outra_pagina.html" para o arquivo HTML desejado
+        }
+
+        function posicionarAleatoriamente() {
+            var conteudo = document.getElementById('conteudo');
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            // Gera posições aleatórias
+            var posicaoX = Math.random() * (larguraJanela - conteudo.offsetWidth);
+            var posicaoY = Math.random() * (alturaJanela - conteudo.offsetHeight);
+
+            // Aplica as posições ao estilo
+            conteudo.style.left = posicaoX + 'px';
+            conteudo.style.top = posicaoY + 'px';
+        }
+
+        // Posiciona aleatoriamente o conteúdo quando a página é carregada
+        window.onload = posicionarAleatoriamente;
+    </script>
+</body>
+
+</html>
